@@ -174,8 +174,8 @@ def generate_docker_directories(
     image_type: str = "server",
 ) -> None:
     arg_version = "ARG VERSION="
-    start_filter = "#docker-official-library:on"
-    stop_filter = "#docker-official-library:off"
+    start_filter = "#docker-official-library:off"
+    stop_filter = "#docker-official-library:on"
     for version, directory in version_dirs.items():
         branch = docker_branch if use_docker_from_branch else version.describe
         logging.debug(
@@ -213,6 +213,7 @@ def generate_docker_directories(
                     continue
                 if not filtering:
                     content.append(line)
+
             df.write_text("\n".join(content) + "\n")
             if build_images:
                 git_runner(
