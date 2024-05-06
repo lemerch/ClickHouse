@@ -5,7 +5,7 @@ Maintainers: Misha f. Shiryaev <felixoid@clickhouse.com> (@Felixoid),
              Alexander Sapin <alesapin@clickhouse.com> (@alesapin)
 GitRepo: https://github.com/ClickHouse/ClickHouse.git
 GitFetch: refs/heads/docker-library
-GitCommit: 69730cfea449995f7e1427a89d6dd65a334e76be
+GitCommit: cea7d758d3535e6026276ab24736fdd89baf5435
 
 Tags: latest, focal, 24, 24-focal, 24.4, 24.4-focal, 24.4.1, 24.4.1-focal, 24.4.1.2088, 24.4.1.2088-focal
 Architectures: amd64, arm64v8
